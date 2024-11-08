@@ -7,10 +7,15 @@ map("n", "0", "^", { noremap = true, silent = true })
 map("i", "kj", "<esc>", { noremap = true, silent = true })
 map("c", "kj", "<esc>", { noremap = true, silent = true })
 
--- windows
-map("n", "<leader>W", "<C-w>", { desc = "Windows", remap = true })
-map("n", "<leader>Wd", "<C-W>c", { desc = "Delete Window", remap = true })
-LazyVim.toggle.map("<leader>Wm", LazyVim.toggle.maximize)
+-- Save
+map("n", "<leader>w", "<CMD>update<CR>")
+
+-- Quit
+map("n", "<leader>q", "<CMD>q<CR>")
+
+-- NeoTree
+map("n", "<leader>e", "<CMD>Neotree toggle<CR>")
+map("n", "<leader>r", "<CMD>Neotree focus<CR>")
 
 -- save
 map({ "i", "x", "n", "s" }, "<leader>w", "<cmd>w<cr><esc>", { desc = "Save File" })
