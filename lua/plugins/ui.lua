@@ -20,9 +20,9 @@ return {
     },
   },
   {
-    "rcarriga/nvim-notify",
+    "folke/snacks.nvim",
     opts = {
-      timeout = 10000,
+      scroll = false,
     },
   },
 }

@@ -38,3 +38,6 @@ keymap.set("n", "<C-w><down>", "<C-w>-")
 
 -- Escape to normal mode
 keymap.set("i", "kj", "<Esc>")
+
+-- Save file
+keymap.set({ "x", "n", "s" }, "<leader>w", "<cmd>w<cr><esc>", { desc = "Save File" })
