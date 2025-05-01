@@ -1,7 +1,14 @@
 return {
   {
-    "folke/tokyonight.nvim",
+    "Mofiqul/vscode.nvim",
     lazy = true,
-    opts = { style = "moon" },
+    name = "vscode",
+  },
+  -- Configure LazyVim to load gruvbox
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "vscode",
+    },
   },
 }
